@@ -1,12 +1,32 @@
 @import 'reset.scss';
-@import 'new.scss';
 
-$color: #CC7209;
+@font-face {
+    font-family: 'Museo-100', sans-serif;
+    src: url('../fonts/MuseoSansCyrl.otf');
+}
+@font-face {
+    font-family: 'Museo-300', sans-serif;
+    src: url('../fonts/MuseoSansCyrl_0.otf');
+}
+@font-face {
+    font-family: 'Museo-500', sans-serif;
+    src: url('../fonts/MuseoSansCyrl_1.otf');
+}
+@font-face {
+    font-family: 'Museo-700', sans-serif;
+    src: url('../fonts/MuseoSansCyrl_2.otf');
+}
+@font-face {
+    font-family: 'Museo-900', sans-serif;
+    src: url('../fonts/MuseoSansCyrl_3.otf');
+}
+
+
 body {
-    background-color: $color;
+    font-family: 'Museo-100', sans-serif;
 }
-@media (max-width: 400px) {
-    body{
-        background-color: #E31616;
-    }
+.inline-list {
+    list-style-type: none;
 }
+
+@import "title-section";

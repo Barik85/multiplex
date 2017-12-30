@@ -14,7 +14,7 @@ gulp.task('del-dist', function(){
 })
 
 gulp.task('pug-compile', function buildHTML() {
-    return gulp.src('src/*.pug')
+    return gulp.src('src/index.pug')
     .pipe(pug())
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
@@ -35,6 +35,8 @@ gulp.task("watch", function(){
     gulp.watch('src/**/*.html', ['html']);
     gulp.watch('src/**/*.pug', ['pug-compile']);    
     gulp.watch('src/Sass/**/*.scss', ['css']);
+    gulp.watch('src/img/**/*.*', ['img']);
+    
 });
 
 // Static server
