@@ -1,0 +1,12 @@
+@import 'reset.scss';
+@import 'new.scss';
+
+$color: #CC7209;
+body {
+    background-color: $color;
+}
+@media (max-width: 400px) {
+    body{
+        background-color: #E31616;
+    }
+}
