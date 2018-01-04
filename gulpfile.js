@@ -36,6 +36,7 @@ gulp.task("watch", function(){
     gulp.watch('src/**/*.pug', ['pug-compile']);    
     gulp.watch('src/Sass/**/*.scss', ['css']);
     gulp.watch('src/img/**/*.*', ['img']);
+    gulp.watch('src/fonts/**/*.*', ['fonts']);
     
 });
 

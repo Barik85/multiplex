@@ -1,0 +1,31 @@
+section.statistic-section
+    .statistic-section-wrapper
+        h1.heading1 multiplex / 
+            a.heading-red(href="#") multiplex.ua
+        p.light-grey-text.
+            Movie tickets from the most popular cinema 
+            network in Ukraine are now at your fingertips!
+            Being the largest Ukrainian movie theatre chain, 
+            Multiplex can boast of a whopping 15 000 seats in 
+            22 theaters throughout the country. Interpretator 
+            team developed a top-notch mobile application that 
+            makes it super easy for 20 000 guests daily to buy 
+            tickets in any Multiplex theatre on the go.
+        h2.heading-red.heading-red-margin App Store
+        .statistic-raw
+            mixin statistic-raw-item (value, p1, p2)
+                .statistic-raw-item
+                    p.statistic__value=value
+                    .statistic__description
+                        p=p1 
+                        p=p2
+            +statistic-raw-item ('51k', 'ACTIVE USERS/ MONTH', 'IN APPSTORE')
+            +statistic-raw-item ('99.9%', 'CRASH-FREE ', 'Users')
+            +statistic-raw-item ('90k', 'DOWNLOADS ', 'IN APPSTORE')
+        h2.heading-red.heading-red-margin Google Play
+        .statistic-raw
+            +statistic-raw-item ('17k', 'ACTIVE USERS/ MONTH', 'IN APPSTORE')
+            +statistic-raw-item ('98.2%', 'CRASH-FREE ', 'Users')
+            +statistic-raw-item ('18k', 'DOWNLOADS ', 'IN PLAYMARKET')
+    .statistic-section__square
+            

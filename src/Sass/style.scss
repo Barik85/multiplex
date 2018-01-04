@@ -1,32 +1,58 @@
 @import 'reset.scss';
 
 @font-face {
-    font-family: 'Museo-100', sans-serif;
-    src: url('../fonts/MuseoSansCyrl.otf');
-}
-@font-face {
-    font-family: 'Museo-300', sans-serif;
-    src: url('../fonts/MuseoSansCyrl_0.otf');
-}
-@font-face {
-    font-family: 'Museo-500', sans-serif;
-    src: url('../fonts/MuseoSansCyrl_1.otf');
-}
-@font-face {
-    font-family: 'Museo-700', sans-serif;
-    src: url('../fonts/MuseoSansCyrl_2.otf');
-}
-@font-face {
-    font-family: 'Museo-900', sans-serif;
-    src: url('../fonts/MuseoSansCyrl_3.otf');
+    font-family: 'museo_sans_cyrl100';
+    src: url('../fonts/museosanscyrl-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+@font-face {
+    font-family: 'museo_sans_cyrl300';
+    src: url('../fonts/museosanscyrl_0-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans_cyrl500';
+    src: url('../fonts/museosanscyrl_1-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans_cyrl700';
+    src: url('../fonts/museosanscyrl_2-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans_cyrl900';
+    src: url('../fonts/museosanscyrl_3-webfont.woff2') format('woff2'),
+         url('../fonts/museosanscyrl_3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
-    font-family: 'Museo-100', sans-serif;
+    font-family: 'museo_sans_cyrl100', sans-serif;
 }
 .inline-list {
     list-style-type: none;
 }
 
 @import "title-section";
+@import "statistic-section";
+@import "screenshots-section";
+@import "app-section";

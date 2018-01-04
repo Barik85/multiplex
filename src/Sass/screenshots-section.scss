@@ -1,0 +1,59 @@
+.screenshots-section {
+    background: linear-gradient(to bottom, #000000 30%, transparent 70%);
+    position: relative;
+    overflow: hidden;
+}
+.screenshots-img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.screenshots-section__square-xxs {
+    position: absolute;
+    transform: rotate(32deg);
+    width: 15px;
+    height: 15px;
+    background-color: #ee322d;
+    top: 67px;
+    left: 25%;
+    z-index: 2;
+}
+.screenshots-section__square-l {
+    position: absolute;
+    transform: rotate(60deg);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ee322d;
+    top: 144px;
+    left: -32px;
+    z-index: 2;    
+}
+.screenshots-section__square-s {
+    position: absolute;
+    transform: rotate(32deg);
+    width: 23px;
+    height: 23px;
+    background-color: #ee322d;
+    top: 546px;
+    right: -2px;
+    z-index: 2;
+}
+.screenshots-section__square-m {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ee322d;
+    top: 797px;
+    left: -20px;
+    z-index: 2;
+}
+.screenshots-section__square-l-2 {
+    position: absolute;
+    transform: rotate(32deg);
+    width: 48px;
+    height: 48px;
+    border: 3px solid #ee322d;
+    bottom: 178px;
+    right: 46%;
+    z-index: 2; 
+}

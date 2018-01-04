@@ -1,0 +1,69 @@
+.statistic-section {
+    background-color: #000000;  
+    position: relative;  
+}
+.statistic-section-wrapper {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 36px 0 1px 0;
+}
+.heading1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'museo_sans_cyrl700';    
+    margin: 25px 0px;
+    letter-spacing: 1px;
+}
+.heading-red {
+    color: #ff5c4d;
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: none;
+    text-decoration: none;
+    font-family: 'Museo-300', sans-serif;
+    letter-spacing: 1px;    
+}
+.light-grey-text {
+    color: #929292;
+    font-family: 'museo_sans_cyrl300';
+    font-size: 20px;  
+    line-height: 30px;
+    position: relative;
+    z-index: 3;  
+}
+.statistic__value {
+    color: #929292;
+    font-size: 65px;
+    font-family: 'museo_sans_cyrl300';  
+    display: inline-block; 
+    margin-right: 20px; 
+}
+.statistic__description {
+    @extend .light-grey-text ;
+    text-transform: uppercase;
+    display: inline-block;
+    p {
+        margin-bottom: 8px;
+    }
+}
+.statistic-raw {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 48px auto;
+}
+.heading-red-margin {
+    margin: 40px 0px;
+}
+.statistic-section__square {
+    position: absolute;
+    transform: rotate(61deg);
+    width: 48px;
+    height: 48px;
+    border: 3px solid #ee322d;
+    top: 235px;
+    right: 28%;
+}
