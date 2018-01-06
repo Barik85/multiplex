@@ -1,0 +1,22 @@
+.platforms-section-wrapper {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0px auto;
+}
+.platforms-section-link {
+    display: inline-block;
+    margin-right: 28px;
+}
+.platforms-section-raw {
+    display: flex;
+    align-items: center;
+    padding: 70px 0 47px 0;
+}
+.platforms-section__description {
+    margin-left: 22px;
+}
+.remarks {
+    @extend .dark-grey-text;
+    font-size: 14px;
+    white-space: pre;
+}

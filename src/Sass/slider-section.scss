@@ -1,0 +1,27 @@
+.slide-left-part {
+    // display: inline-block;
+    width: 50%;
+    border-right: 1px solid #a3a3a3;
+    box-sizing: border-box;
+    padding: 20px 0 20px 36px;  
+    float: left;
+}
+.slide-right-part {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px 0 20px 36px;        
+}
+.slide-img-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.img-box {
+    text-align: center;
+}
+.slider-section-wrapper {
+    width: 95%;
+    max-width: 1160px;
+    margin: 0 auto;
+}

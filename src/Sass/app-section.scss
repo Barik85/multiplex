@@ -1,5 +1,6 @@
 .app-section {
     position: relative;
+    overflow: hidden;
 }
 .app-section-wrapper {
     width: 90%;
@@ -12,14 +13,14 @@
     font-size: 30px;
     text-transform: uppercase;
     color: #4d4d4f;
-    font-family: 'museo_sans_cyrl700';
+    font-family: 'museo_sans_cyrl700', sans-serif;
 }
 .heading-grey__margin40 {
     margin-bottom: 40px;
 }
 .dark-grey-text{
 color:#4b4b4b;
-font-family: 'museo_sans_cyrl300';
+font-family: 'museo_sans_cyrl300', sans-serif;
 font-size: 20px;
 line-height: 30px;
 }
@@ -35,8 +36,8 @@ line-height: 30px;
 .app-raw {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 25px 0px 40px 0px;
+    align-items: top;
+    padding: 25px 0px 50px 0px;
     @media (max-width: 830px) {
         flex-direction: column;
     }
@@ -73,6 +74,11 @@ line-height: 30px;
 .img-shadow{
     box-shadow: 30px 40px 27px -5px rgba(0,0,0,.24);
     border-radius: 23px;
+    position: relative;
+    z-index: 3;
+}
+.app-raw-text {
+    padding: 25px 0 0 0;
 }
 .app-raw-img-box__frame {
     position: absolute;
@@ -81,7 +87,7 @@ line-height: 30px;
     height: 1343px;
     top: 48px;
     left: 115px;
-    z-index: -1;
+    z-index: 2;
     @media (max-width: 830px) {
         display: none;
     }
