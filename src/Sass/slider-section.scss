@@ -81,6 +81,7 @@
     color: #000000;
     background-color: transparent;
     padding: 20px 30px;
+    min-width: 150px;
     border: 2px solid #efefee;
     cursor: pointer;
     transition: all 400ms ease-in-out;
@@ -95,7 +96,9 @@
         }
     }
     @media (max-width: 480px) {
-        padding: 20px 10px;
+        padding: 20px 7px;
+        font-size: 14px;
+        min-width: 92px;
     }
 }
 .text-left {

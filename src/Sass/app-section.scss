@@ -88,11 +88,17 @@ line-height: 30px;
 .app-raw-img-box__frame {
     position: absolute;
     border: 5px solid #ee322d;
-    width: 63%;
-    height: 1343px;
-    top: 48px;
-    left: 115px;
+    width: 337px;
+    height: 94%;
+    top: 71px;
+    right: 7%;
     z-index: 2;
+    @media (max-width: 1160px) {
+        right: 6%;
+    }
+    @media (max-width: 970px) {
+        right: 5%;
+    }
     @media (max-width: 830px) {
         display: none;
     }

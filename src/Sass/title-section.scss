@@ -113,6 +113,8 @@
     text-align: center;
     line-height: 41px;
     margin: 0px 5px 0px 0px;
+    box-sizing: border-box;
+    padding-top: 2px;
     transition: all 250ms ease-in-out;
 }
 .menu__link {
@@ -145,7 +147,7 @@
     border-radius: 40px;
     transition: all 250ms ease-in-out;
     &:hover{
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: $red-color;
     }
 }
 .menu__link__center {

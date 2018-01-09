@@ -1,3 +1,8 @@
+section.platforms-section {
+    @media (min-width: 990px){
+        margin-top: -100px;
+    }
+}
 .platforms-section-wrapper {
     width: 90%;
     max-width: 1120px;
@@ -7,15 +12,23 @@
     display: inline-block;
     margin-right: 28px;
     @media (max-width: 720px){    
-        margin: 0px auto 20px auto;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
     }
 }
 .platforms-section-raw {
     display: flex;
     align-items: center;
     padding: 70px 0 47px 0;
-    @media (max-width: 720px){
+    @media (max-width: 830px){
         flex-direction: column;
+    }
+}
+.platforms-logo-wrapper {
+    min-width: 339px;
+    @media (max-width: 830px){
+        margin-bottom: 20px;
     }
 }
 .platforms-section__description {

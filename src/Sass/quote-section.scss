@@ -1,15 +1,18 @@
 .quote-section {
     background-color: #9bd2e0;
-    padding: 38px 200px 88px 104px;
+    padding: 38px 200px 88px 85px;
     width: 71%;
     margin: 0 0 0 34px;
     position: relative;
     top: -155px;
     box-sizing: border-box;
-    @media (max-width: 970px) {
+    @media (max-width: 990px) {
         top: -55px;
         width:100%;
         margin: 0;
+        padding: 44px;
+    }
+    @media (max-width: 480px) {
         padding: 44px 20px;
     }
 }
