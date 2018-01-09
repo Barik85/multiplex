@@ -13,3 +13,8 @@
     font-size: 14px;
     font-family: 'museo_sans_cyrl300';
 }
+.footer__logo {
+    @media (max-width: 350px){
+        width: 50%;
+    }
+}
