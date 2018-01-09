@@ -2,6 +2,7 @@
     background: linear-gradient(to bottom, #000000 30%, transparent 70%);
     position: relative;
     overflow: hidden;
+    top: -1px;
 }
 .screenshots-img {
     width: 100%;
@@ -17,6 +18,9 @@
     top: 67px;
     left: 25%;
     z-index: 2;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .screenshots-section__square-l {
     position: absolute;
@@ -27,6 +31,9 @@
     top: 144px;
     left: -32px;
     z-index: 2;    
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .screenshots-section__square-s {
     position: absolute;
@@ -37,6 +44,9 @@
     top: 546px;
     right: -2px;
     z-index: 2;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .screenshots-section__square-m {
     position: absolute;
@@ -46,6 +56,9 @@
     top: 797px;
     left: -20px;
     z-index: 2;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .screenshots-section__square-l-2 {
     position: absolute;
@@ -56,4 +69,7 @@
     bottom: 178px;
     right: 46%;
     z-index: 2; 
+    @media (max-width: 720px) {
+        display: none;
+    }
 }

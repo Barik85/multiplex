@@ -32,6 +32,9 @@ line-height: 30px;
     background-color:#ee322d;
     bottom: 0px;
     left: 25%;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .app-raw {
     display: flex;
@@ -69,6 +72,8 @@ line-height: 30px;
     width: 187px;
     @media (max-width: 830px) {
         order: -1;
+        padding-bottom: 42px;
+        margin: 0 auto;
     }
 }
 .img-shadow{
@@ -99,6 +104,9 @@ line-height: 30px;
     background-color: #ee322d;
     top: -40px;
     right: -40px;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .app-section__square-left {
     position: absolute;
@@ -108,6 +116,9 @@ line-height: 30px;
     background-color: #ee322d;
     top: 710px;
     left: -47px;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .app-section__square-right {
     position: absolute;
@@ -117,6 +128,9 @@ line-height: 30px;
     background-color: #ee322d;
     top: 1144px;
     right: -15px;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .app-section__square-center {
     position: absolute;
@@ -126,4 +140,7 @@ line-height: 30px;
     background-color: #ee322d;
     top: 1284px;
     right: 605px;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }

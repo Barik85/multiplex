@@ -2,7 +2,7 @@ section.slider-section
     .slider-section-wrapper
         .slider
             .slide
-                .slide-left-part.clearfix
+                .slide-left-part
                     h3.heading-grey TECHNOLOGIES
                     .slide-img-container
                         .img-box
@@ -19,8 +19,18 @@ section.slider-section
                     .slide-img-container
                         .img-box
                             img.slider-img(src="img/design.png", alt="")
-                            p Grafical Design
+                            p.text-left 
+                                |Grafical 
+                                br
+                                |Design
                         .img-box
                             img.slider-img(src="img/mobile-dev.png", alt="")
                             p Mobile Dev
         .slider-nav
+            button.slider-nav__button#previous 
+                include ../img/left-arrow.svg
+                |Previous
+            button.slider-nav__button View all
+            button.slider-nav__button#next 
+                |Next                        
+                include ../img/right-arrow.svg

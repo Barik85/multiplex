@@ -1,10 +1,17 @@
 .quote-section {
     background-color: #9bd2e0;
     padding: 38px 200px 88px 104px;
-    width: 47%;
+    width: 71%;
     margin: 0 0 0 34px;
     position: relative;
     top: -155px;
+    box-sizing: border-box;
+    @media (max-width: 970px) {
+        top: -55px;
+        width:100%;
+        margin: 0;
+        padding: 44px 20px;
+    }
 }
 .quote-section-author__avatar{
     display: inline-block;
@@ -53,4 +60,7 @@
     top: 63%;
     right: -13px;
     transform: rotate(30deg);
+    @media (max-width: 970px) {
+        display: none;
+    }
 }

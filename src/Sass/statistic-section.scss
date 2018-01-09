@@ -41,6 +41,9 @@
     font-family: 'museo_sans_cyrl300';  
     display: inline-block; 
     margin-right: 20px; 
+    @media (max-width: 830px) {
+        font-size: 60px;
+    }
 }
 .statistic__description {
     @extend .light-grey-text ;
@@ -49,11 +52,21 @@
     p {
         margin-bottom: 8px;
     }
+    @media (max-width: 830px){
+        font-size: 15px;
+        line-height: 27px;
+    }
 }
 .statistic-raw {
     display: flex;
     justify-content: space-between;
     margin: 40px auto 48px auto;
+    @media (max-width: 830px) {
+        flex-direction: column;
+    }
+}
+.statistic-raw-item {
+    display: flex;
 }
 .heading-red-margin {
     margin: 40px 0px;
@@ -66,4 +79,7 @@
     border: 3px solid #ee322d;
     top: 235px;
     right: 28%;
+    @media (max-width: 720px) {
+        display: none;
+    }
 }

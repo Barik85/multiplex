@@ -58,6 +58,7 @@ body {
     clear: both;
     visibility: hidden;
     }
+$red-color: #ee322d;
 
 @import "title-section";
 @import "statistic-section";
@@ -67,3 +68,5 @@ body {
 @import "platforms-section";
 @import "infografic-section";
 @import "slider-section";
+@import "cta-section";
+@import "footer";

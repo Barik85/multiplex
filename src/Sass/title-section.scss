@@ -3,6 +3,9 @@
     .menu-item, .menu-item--frame {
         display: inline-block;
     }
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 .header {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
@@ -15,6 +18,9 @@
     background-position: center bottom;
     min-height: 728px;
     position: relative;
+    @media (max-width: 720px) {
+        min-height: 400px;
+    }
     .title-section__square-l {
         position: absolute;
         transform: rotate(45deg);
@@ -23,6 +29,9 @@
         border: 5px solid #ee322d;
         top: 221px;
         left: 65px;
+        @media (max-width: 720px) {
+            display: none;
+        }
     }
     .title-section__square-xl {
         position: absolute;
@@ -32,6 +41,9 @@
         border: 5px solid #ee322d;
         top: 144px;
         left: -10px;
+        @media (max-width: 720px) {
+            display: none;
+        }
     }
     .title-section__square-s-filled {
         position: absolute;
@@ -41,6 +53,9 @@
         background-color: #ee322d;
         top: 346px;
         right: 7%;
+        @media (max-width: 720px) {
+            display: none;
+        }
     }
     .title-section__square-xs-filled {
         position: absolute;
@@ -50,6 +65,9 @@
         background-color: #ee322d;
         bottom: 10px;
         right: 33%;
+        @media (max-width: 720px) {
+            display: none;
+        }
     }
     .title-section__square-m-filled {
         position: absolute;
@@ -59,6 +77,9 @@
         bottom: -20px;
         left: 5%;
         z-index: 2;
+        @media (max-width: 720px) {
+            display: none;
+        }
     }
 }
 .header-wrapper {
@@ -78,6 +99,8 @@
 .header-logo-box {
     width: 40%;
     max-width: 238px;
+    position: relative;
+    z-index: 2;
 }
 .header__logo {
     width: 100%;
@@ -130,6 +153,36 @@
 }
 .menu__icon__hire {
     margin: 0px 5px 0px 0px;
+}
+.mobile-menu{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 100px 0px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: none;  
+    top: 0;
+    transition: all 700ms ease-in-out;      
+    .menu-item--frame {
+        display: inline-block;
+        padding: 10px 27px 7px;
+    }
+    .menu-item {
+        margin: 35px 0;
+    }
+}
+.burger-box {
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    @media (min-width: 721px) {
+        display: none;
+    }
+}
+.visible {
+    display: block;
 }
 
 

@@ -1,27 +1,113 @@
+.slider-section {
+    margin: 66px 0 39px;
+}
+.slide {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 720px) {
+        flex-direction: column;
+    }
+}
 .slide-left-part {
-    // display: inline-block;
+    display: inline-block;
     width: 50%;
     border-right: 1px solid #a3a3a3;
     box-sizing: border-box;
     padding: 20px 0 20px 36px;  
-    float: left;
+    .slide-img-container {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        padding-top: 71px;
+        @media (max-width: 720px) {
+        width: 90%;
+        }
+    }
+    @media (max-width: 720px) {
+        border-right: none;
+        border-bottom: 1px solid #a3a3a3;        
+        width: 100%;
+    }
 }
 .slide-right-part {
-    display: inline-block;
+    // display: inline-block;
     width: 50%;
     box-sizing: border-box;
-    padding: 20px 0 20px 36px;        
-}
-.slide-img-container {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
+    padding: 20px 0 20px 64px;
+    .slide-img-container {
+        display: flex;
+        justify-content: space-between;
+        width: 58%;
+        padding-top: 38px;
+    }
+    @media (max-width: 720px) {
+        padding: 20px 0 20px 36px;
+        width: 100%;
+    }
 }
 .img-box {
     text-align: center;
+    p {
+        padding: 20px 0;
+    }
 }
 .slider-section-wrapper {
     width: 95%;
     max-width: 1160px;
     margin: 0 auto;
+}
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    :nth-child(2) {
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 20px 43px;
+        @media (max-width: 480px) {
+            padding: 20px 10px;
+            position: static;
+            transform: none;
+        }
+    }
+}
+.slider-nav__button {
+    display: block;
+    font-family: 'museo_sans_cyrl700';
+    color: #000000;
+    background-color: transparent;
+    padding: 20px 30px;
+    border: 2px solid #efefee;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    &:hover {
+        color: #ffffff;
+        background-color: $red-color;
+        border: 2px solid $red-color;
+    }
+    &:hover {
+        svg {
+            fill: #ffffff;
+        }
+    }
+    @media (max-width: 480px) {
+        padding: 20px 10px;
+    }
+}
+.text-left {
+    text-align: left;
+}
+#left-arrow {
+    transition: all 400ms ease-in-out;    
+    width: 12px;
+    padding-right: 5px;
+}
+#right-arrow {
+    transition: all 400ms ease-in-out;    
+    width: 12px;
+    padding-left: 5px;
 }

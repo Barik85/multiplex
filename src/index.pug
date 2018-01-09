@@ -15,4 +15,17 @@ html(lang="en")
         include pug/platforms-section
         include pug/infografic-section
         include pug/slider-section
+        include pug/cta-section
+        include pug/footer
+        script(src="js/main.js")
+        //- script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        //- script(type="text/javascript" src="js/slick/slick.min.js")
+        //- script.
+            $(document).ready(function(){
+            $('.slider').slick({
+            infinite: true,
+            prevArrow: $('#previous'),
+            nextArrow: $('#next')
+            });
+            });
         

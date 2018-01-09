@@ -6,11 +6,17 @@
 .platforms-section-link {
     display: inline-block;
     margin-right: 28px;
+    @media (max-width: 720px){    
+        margin: 0px auto 20px auto;
+    }
 }
 .platforms-section-raw {
     display: flex;
     align-items: center;
     padding: 70px 0 47px 0;
+    @media (max-width: 720px){
+        flex-direction: column;
+    }
 }
 .platforms-section__description {
     margin-left: 22px;
